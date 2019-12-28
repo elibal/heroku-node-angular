@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+//,
+    // "node:watch-ts": "tsc -w -p server",
+    // "node:lint": "npm run node:build-ts && eslint \"server/**/*.ts\" --quiet --fix",
+    // "node:debug": "nodemon -r dotenv/config --inspect=9229 server/dist/index.js",
+    // "node:start": "node -r dotenv/config server/dist/index.js",
+    // "node-ng:build": "concurrently \"npm run node:build-ts\" \"npm run build\"",
+    // "node-ng:debug": "concurrently \"npm run node:debug\" \"npm run start\""
+"concurrently \"tsc -p server --watch\" \"nodemon server/dist\""

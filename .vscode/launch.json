@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Angular",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "npm: ng-dev",
+      "url": "http://localhost:4200/",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch server.js via nodemon",
+      "type": "node",
+      "request": "launch",
+      "preLaunchTask": "npm: node-dev",
+      "console": "integratedTerminal"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Express and Angular",
+      "configurations": ["Launch server.js via nodemon", "Launch Angular"]
+    }
+  ]
+}
