@@ -5,16 +5,18 @@
       "name": "Launch Angular",
       "type": "chrome",
       "request": "launch",
-      "preLaunchTask": "npm: ng-dev",
+      "preLaunchTask": "run serve",
       "url": "http://localhost:4200/",
-      "webRoot": "${workspaceFolder}"
+      "webRoot": "${workspaceFolder}",
+      "postDebugTask": "kill running tasks"
     },
     {
       "name": "Launch server.js via nodemon",
       "type": "node",
       "request": "launch",
       "preLaunchTask": "npm: node-dev",
-      "console": "integratedTerminal"
+      "console": "integratedTerminal",
+      "postDebugTask": "kill running tasks"
     }
   ],
   "compounds": [

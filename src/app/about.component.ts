@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="content-container">
       <div class="content-title-group not-found">
-        <h2 class="title">Tour of Heroes</h2>
+        <h3 class="title">Tour of Heroes</h3>
         <p>
           This project was created to help represent a fundamental app written with Angular. The heroes and villains
           theme is used throughout the app.

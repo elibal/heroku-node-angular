@@ -2,10 +2,10 @@ import { Request, Response } from 'express';
 
 async function getHeroes(req: Request, res: Response) {
   try {
-    const heroes = [{ name: 'a', description: 'aa', id: 1},
-                    { name: 'b', description: 'bb', id: 2},
-                    { name: 'c', description: 'cc', id: 3},
-                    { name: 'd', description: 'dd', id: 5}];
+    const heroes = [{ name: 'a', description: 'aaa', id: 1},
+                    { name: 'b', description: 'bbb', id: 2},
+                    { name: 'c', description: 'ccc', id: 3},
+                    { name: 'd', description: 'ddd', id: 5}];
     res.status(200).json(heroes);
   } catch (error) {
     res.status(500).send(error);
